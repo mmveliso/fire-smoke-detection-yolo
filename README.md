@@ -116,7 +116,18 @@ Everything runs on Google Colab with a GPU runtime. The notebooks and scripts ex
 6. Run sections 1 to 8 of `yolov5s_dfire_train_eval.ipynb`.
 7. Run sections 5 to 8 of `yolov4_test_evaluation.ipynb`, then section 9 of the YOLOv5 notebook.
 
-Steps 5 to 7 alternate because each notebook reads comparison files written by the other. Trained weights are not included in the repository because of their size.
+Steps 5 to 7 alternate because each notebook reads comparison files written by the other.
+
+## Trained weights
+
+The trained models are attached to the [v1.0 release](https://github.com/mmveliso/fire-smoke-detection-yolo/releases/tag/v1.0), because they are too large for the repository itself.
+
+| File | Model | Size |
+|---|---|---|
+| [`yolov5s_fire_smoke_best.pt`](https://github.com/mmveliso/fire-smoke-detection-yolo/releases/download/v1.0/yolov5s_fire_smoke_best.pt) | YOLOv5s, best checkpoint of the 85-epoch run | 14 MB |
+| [`yolov4-fire-smoke_best.weights`](https://github.com/mmveliso/fire-smoke-detection-yolo/releases/download/v1.0/yolov4-fire-smoke_best.weights) | YOLOv4, best checkpoint by validation mAP | 244 MB |
+
+The YOLOv4 weights are used together with `configs/yolov4-fire-smoke.cfg` and `configs/obj.names`.
 
 ## Running on a Raspberry Pi
 
@@ -144,7 +155,7 @@ pip install -r ~/fire_smoke_detection/yolov5/requirements.txt
 pip install opencv-python numpy
 ```
 
-Picamera2 is installed with `apt`, not `pip`, so the virtual environment must be created with `--system-site-packages` to see it. Then copy the trained weights into `~/fire_smoke_detection/models/` as described at the top of each script, and run for example:
+Picamera2 is installed with `apt`, not `pip`, so the virtual environment must be created with `--system-site-packages` to see it. Then download the trained weights (see [Trained weights](#trained-weights)) into `~/fire_smoke_detection/models/` as described at the top of each script, and run for example:
 
 ```
 python raspberry_pi/pi_yolov5s_camera_logging.py --test-name normal_room --duration 60
