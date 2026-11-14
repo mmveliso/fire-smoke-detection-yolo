@@ -1,0 +1,5 @@
+classes = 2
+train = /content/drive/MyDrive/Fire_smoke_detection/configs/YOLOv4/train.txt
+valid = /content/drive/MyDrive/Fire_smoke_detection/configs/YOLOv4/valid.txt
+names = /content/drive/MyDrive/Fire_smoke_detection/configs/YOLOv4/obj.names
+backup = /content/drive/MyDrive/Fire_smoke_detection/experiments/YOLOv4/backup/

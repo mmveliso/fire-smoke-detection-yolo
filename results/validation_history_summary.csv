@@ -1,0 +1,7 @@
+metric,model,final_value,best_value,best_epoch,points_recorded,directly_comparable
+Validation mAP@0.50,YOLOv4,0.752377,0.752377,85.00195978805255,19,True
+Validation mAP@0.50,YOLOv5s,0.76529,0.7683,75.0,85,True
+Framework-reported validation precision,YOLOv4,0.72,0.73,35.124047325252235,19,False
+Framework-reported validation precision,YOLOv5s,0.79011,0.7975,71.0,85,False
+Framework-reported validation recall,YOLOv4,0.73,0.73,79.07439936125427,19,False
+Framework-reported validation recall,YOLOv5s,0.71128,0.72123,66.0,85,False

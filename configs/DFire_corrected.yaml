@@ -1,0 +1,8 @@
+path: /content/drive/MyDrive/Fire_smoke_detection/data/processed/DFireDataset_split
+train: images/train
+val: images/val
+test: images/test
+nc: 2
+names:
+- smoke
+- fire

@@ -1,0 +1,7 @@
+model,class,test_images,ground_truth_objects,ap50,map50_95,true_positives_conf025,false_positives_conf025,false_negatives_conf025,confidence_threshold,iou_threshold,precision_conf025,recall_conf025,f1_conf025,operating_metric_method,operating_confidence_threshold,operating_matching_iou
+YOLOv4,smoke,4306,2311,0.8076,,1856,553,455,0.25,0.5,0.7704441677044417,0.8031155344006924,0.7864406779661018,Common exported-prediction matching,0.25,0.5
+YOLOv4,fire,4306,2878,0.6851,,1975,1180,903,0.25,0.5,0.6259904912836767,0.6862404447533009,0.6547323056522459,Common exported-prediction matching,0.25,0.5
+YOLOv4,all,4306,5189,0.74634,,3831,1733,1358,0.25,0.5,0.6885334291876348,0.7382925419155907,0.7125453361852507,Common exported-prediction matching,0.25,0.5
+YOLOv5s,smoke,4306,2311,0.829,0.49,1914,601,397,0.25,0.5,0.7610337972166998,0.828212894850714,0.7932034811438046,Common exported-prediction matching,0.25,0.5
+YOLOv5s,fire,4306,2878,0.692,0.344,2043,1319,835,0.25,0.5,0.607674003569304,0.7098679638637942,0.6548076923076922,Common exported-prediction matching,0.25,0.5
+YOLOv5s,all,4306,5189,0.76,0.417,3957,1920,1232,0.25,0.5,0.6733027054619704,0.762574677201773,0.7151635640701247,Common exported-prediction matching,0.25,0.5
